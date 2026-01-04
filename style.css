@@ -1,0 +1,30 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    background-color: whitesmoke;
+    border: 1px solid silver;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 1px silver;
+    padding: 5px 10px;
+}
+header p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.silver{
+    background-color: rgb(201, 201, 201);
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+.silver a{
+    text-decoration: none;
+}
+.dotted{
+    background-color: rgb(154, 199, 199);
+    border: 2px dotted rgb(103, 170, 170);
+    padding: 2px 5px;
+    display: inline-block;
+    border-radius: 4px;
+}
