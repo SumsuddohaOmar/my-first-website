@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration Form</title>
   <style>
+    fieldset{
+      width: 30%;
+    }
+    form label{
+      display: block;
+      margin-bottom: 5px;
+    }
     p a{
        text-decoration: none;
     }
@@ -13,16 +20,24 @@
 <body>
   <h2>Registration Form</h2>
   <form>
-    <input type="Text" placeholder="First Name">
-    <input type="Text" placeholder="Last Name">
-    <input type="email" placeholder="Email">
-    <input type="number" placeholder="Phone Number">
-    <input type="date" placeholder="date">
-    <select>
+    <label for="Full Name"><b>Enter Your Full Name: </b><input type="text" name="name" id="full name" placeholder="Full Name"></label>
+    <label for="First Name"><b>Enter Your First Name: </b><input type="text" name="name" id="first name" placeholder="First Name"></label>
+    <label for="Last Name"><b>Enter Your Last Name: </b><input type="text" name="name" id="last name" placeholder="Last Name"></label>
+    <label for="phone number"><b>Enter Your Phone Number: </b><input type="Number" name="phone number" id="phone number" placeholder="Phone Number"></label>
+    <label for="gender">
+      <b>Gender: </b><select>
       <option>Male</option>
       <option>Female</option>
       <option>Others</option>
     </select>
+    </label>
+    <fieldset>
+      <legend>Select Your Degree</legend>
+      <label for="psc"><input type="radio" name="degree" id="psc">PSC</label>
+      <label for="jsc"><input type="radio" name="degree" id="jsc">JSC</label>
+      <label for="ssc"><input type="radio" name="degree" id="ssc">SSC</label>
+      <label for="hsc"><input type="radio" name="degree" id="hsc">HSC</label>
+    </fieldset>
     <p><input type="checkbox"> <small>I accept the <a href="">terms</a> and <a href="">policies.</a></small>
     </p>
     <button>Submit</button>
